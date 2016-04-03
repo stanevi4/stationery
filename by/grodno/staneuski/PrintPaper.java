@@ -1,15 +1,15 @@
 package by.grodno.staneuski;
 
-public class Folder extends StationeryAccessories {
+public class PrintPaper extends StationeryAccessories {
 	
-	private String format;
-	
-	public String getFormat() {
-		return format;
+	private int thickness;
+
+	public int getThickness() {
+		return thickness;
 	}
 
-	public void setFormat(String format) {
-		this.format = format;
+	public void setThickness(int thickness) {
+		this.thickness = thickness;
 	}
 
 	@Override
@@ -17,7 +17,7 @@ public class Folder extends StationeryAccessories {
 		System.out.println("Print paper characteristics:");
 		System.out.println("Name: " + this.getName());
 		System.out.println("Manufacturer: " + this.getManufacturer());
-		System.out.println("Format: " + this.getFormat());
+		System.out.println("Thickness: " + this.getThickness());
 		System.out.println("Cost: " + this.getCost());
 	}
 }
