@@ -21,7 +21,12 @@ public class Employee {
 	public void setPosition(String position) {
 		this.position = position;
 	}
-	
+	public List<StationeryAccessories> getWorkspace() {
+		return workspace;
+	}
+	public void setWorkspace(List<StationeryAccessories> workspace) {
+		this.workspace = workspace;
+	}	
 	public void addItem(StationeryAccessories item){
 		this.workspace.add(item);
 	}
@@ -48,4 +53,5 @@ public class Employee {
 		System.out.println("");
 		System.out.println("Total Summ = " + totalSumm);
 	}
+		
 }
